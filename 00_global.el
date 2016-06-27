@@ -12,6 +12,10 @@
 (require 'prelude-evil)
 (require 'prelude-scss)
 
+;;; Enable global company (completion) mode.
 (add-hook 'after-init-hook 'global-company-mode)
+
+;;; Exit evil insert state when buffer is saved.
+(add-hook 'after-save-hook 'evil-normal-state)
 
 ;;; 00_global.el ends here
