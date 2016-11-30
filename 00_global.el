@@ -25,4 +25,7 @@
 ;;; Exit evil insert state when buffer is saved.
 (add-hook 'after-save-hook 'evil-normal-state)
 
+;;; Wrap text at 80 columns in all modes by default.
+(setq-default fill-column 80)
+
 ;;; 00_global.el ends here
