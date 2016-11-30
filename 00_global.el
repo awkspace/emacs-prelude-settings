@@ -6,6 +6,7 @@
 
 ;;; Code:
 
+;;; Disable guru mode as it works at odds with evil-mode.
 (setq prelude-guru nil)
 
 (require 'prelude-ruby)
