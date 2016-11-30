@@ -6,6 +6,9 @@
 
 ;;; Code:
 
+;;; Enable global line number display.
+(global-linum-mode t)
+
 ;;; Set default GUI font.
 (set-frame-font "Inconsolata 11")
 
