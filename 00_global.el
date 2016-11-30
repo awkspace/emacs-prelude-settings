@@ -6,6 +6,9 @@
 
 ;;; Code:
 
+;;; Set default GUI font.
+(set-frame-font "Inconsolata 11")
+
 ;;; Disable guru mode as it works at odds with evil-mode.
 (setq prelude-guru nil)
 
