@@ -1,4 +1,4 @@
-;;; 20_ruby.el --- Ruby-specific configuration
+;;; 10_ruby.el --- Ruby-specific configuration
 
 ;;; Commentary:
 
@@ -10,4 +10,4 @@
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 
-;;; 20_ruby.el ends here
+;;; 10_ruby.el ends here
