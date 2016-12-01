@@ -6,6 +6,12 @@
 
 ;;; Code:
 
+;;; Requires
+(require 'prelude-ruby)
+(require 'prelude-evil)
+(require 'prelude-scss)
+(require 'typopunct)
+
 ;;; Disable auto-save on lost focus.
 (setq prelude-auto-save nil)
 
@@ -22,10 +28,6 @@
 
 ;;; Disable guru mode as it works at odds with evil-mode.
 (setq prelude-guru nil)
-
-(require 'prelude-ruby)
-(require 'prelude-evil)
-(require 'prelude-scss)
 
 ;;; Enable global company (completion) mode.
 (add-hook 'after-init-hook 'global-company-mode)

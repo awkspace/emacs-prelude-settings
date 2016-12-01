@@ -9,7 +9,6 @@
 (defun markdown-mode-config ()
   (set-fill-column 80)
   (turn-on-auto-fill)
-  (require 'typopunct)
   (typopunct-change-language 'english t)
   (typopunct-mode 1))
 
