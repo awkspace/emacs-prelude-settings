@@ -6,6 +6,9 @@
 
 ;;; Code:
 
+;;; Disable auto-save on lost focus.
+(setq prelude-auto-save nil)
+
 ;;; Enable global line number display.
 (global-linum-mode t)
 
