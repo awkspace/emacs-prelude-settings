@@ -15,6 +15,11 @@
 ;;; Set default GUI font.
 (set-frame-font "Inconsolata 11")
 
+;;; Increase font size on MacOS.
+(if (eq system-type 'darwin)
+  (set-face-attribute 'default nil :height 150)
+)
+
 ;;; Disable guru mode as it works at odds with evil-mode.
 (setq prelude-guru nil)
 
