@@ -38,4 +38,7 @@
 ;;; Wrap text at 80 columns in all modes by default.
 (setq-default fill-column 80)
 
+;;; Keyboard shortcuts
+(global-set-key (kbd "C-x C-a") 'helm-ag-project-root)
+
 ;;; 00_global.el ends here
