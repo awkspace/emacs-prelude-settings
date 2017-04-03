@@ -19,7 +19,7 @@
 (global-linum-mode t)
 
 ;;; Set default GUI font.
-(set-frame-font "Inconsolata 11")
+(set-frame-font "Terminus 10")
 
 ;;; Increase font size on MacOS.
 (if (eq system-type 'darwin)
