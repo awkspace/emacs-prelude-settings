@@ -7,7 +7,6 @@
 ;;; Code:
 
 ;;; Requires
-(require 'prelude-ruby)
 (require 'prelude-evil)
 (require 'prelude-scss)
 (require 'typopunct)
