@@ -11,6 +11,7 @@
 (require 'prelude-evil)
 (require 'prelude-scss)
 (require 'typopunct)
+(require 'robe)
 
 ;;; Disable auto-save on lost focus.
 (setq prelude-auto-save nil)
