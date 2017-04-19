@@ -45,4 +45,7 @@
 ;;; Keyboard shortcuts
 (global-set-key (kbd "C-x C-a") 'helm-ag-project-root)
 
+;;; Scroll one line at a time
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+
 ;;; 00_global.el ends here
