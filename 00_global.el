@@ -18,13 +18,17 @@
 ;;; Enable global line number display.
 (global-linum-mode t)
 
-;;; Set default GUI font.
-(set-frame-font "Terminus 10")
+(when (eq system-type 'darwin)
 
-;;; Increase font size on MacOS.
-(if (eq system-type 'darwin)
-  (set-face-attribute 'default nil :height 150)
-)
+  ;;; Increase font size on MacOS.
+  (set-face-attribute 'default nil :height 125)
+
+  ;;; Disable scrollbar on MacOS.
+  (scroll-bar-mode -1))
+
+;;; Set default font on non-MacOS systems.
+(unless (eq system-type 'darwin)
+  (set-frame-font "Terminus 10"))
 
 ;;; Disable guru mode as it works at odds with evil-mode.
 (setq prelude-guru nil)
