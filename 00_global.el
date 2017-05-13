@@ -18,6 +18,7 @@
 ;;; Enable global line number display.
 (global-linum-mode t)
 
+;;; Mac specific
 (when (eq system-type 'darwin)
 
   ;;; Increase font size on MacOS.
@@ -26,8 +27,8 @@
   ;;; Disable scrollbar on MacOS.
   (scroll-bar-mode -1))
 
-;;; Set default font on non-MacOS systems.
-(unless (eq system-type 'darwin)
+;;; Set default font on Linux only.
+(if (eq system-type 'gnu/linux)
   (set-frame-font "Terminus 10"))
 
 ;;; Disable guru mode as it works at odds with evil-mode.
