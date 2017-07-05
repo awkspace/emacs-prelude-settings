@@ -34,6 +34,9 @@
 ;;; Disable guru mode as it works at odds with evil-mode.
 (setq prelude-guru nil)
 
+;;; Disable flyspell-mode by default.
+(setq prelude-flyspell nil)
+
 ;;; Enable global company (completion) mode.
 (add-hook 'after-init-hook 'global-company-mode)
 
