@@ -11,6 +11,7 @@
 (require 'prelude-scss)
 (require 'typopunct)
 (require 'robe)
+(require 'sourcepawn-mode nil t)
 
 ;;; Disable auto-save on lost focus.
 (setq prelude-auto-save nil)
