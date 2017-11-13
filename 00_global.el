@@ -9,8 +9,9 @@
 ;;; Requires
 (require 'prelude-evil)
 (require 'prelude-scss)
+(require 'prelude-company)
 (require 'typopunct)
-(require 'robe)
+(use-package robe)
 (require 'sourcepawn-mode nil t)
 
 ;;; Disable auto-save on lost focus.
