@@ -3,3 +3,5 @@
 /custom.el
 disabled/*
 !disabled/.gitkeep
+vendor/sourcepawn-mode/sp-include/*
+.dir-locals.el
