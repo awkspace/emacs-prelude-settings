@@ -6,13 +6,32 @@
 
 ;;; Code:
 
+;;; Load use-package
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+(setq use-package-always-ensure t)
+
 ;;; Requires
 (require 'prelude-evil)
 (require 'prelude-scss)
 (require 'prelude-company)
 (require 'typopunct)
+(use-package darkokai-theme)
 (use-package robe)
 (require 'sourcepawn-mode nil t)
+
+;;; Load theme
+(load-theme 'darkokai t)
 
 ;;; Disable auto-save on lost focus.
 (setq prelude-auto-save nil)
