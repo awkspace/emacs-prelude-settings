@@ -1,0 +1,9 @@
+# Compiler-defined types
+String
+Float
+Fixed
+bool
+float
+int
+char
+void
