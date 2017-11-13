@@ -1,5 +1,7 @@
 # awk's Emacs configuration
 
-Not much to see here (yet).
+## Easy install
 
-For Markdown-specific configuration, see [10_markdown.el](./10_markdown.el).
+```bash
+wget -O- https://raw.githubusercontent.com/awkspace/emacs-settings/master/install.sh | bash
+```
