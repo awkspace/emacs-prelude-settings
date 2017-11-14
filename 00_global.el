@@ -28,6 +28,7 @@
 (require 'typopunct)
 (use-package darkokai-theme)
 (use-package robe)
+(use-package helm-ag)
 (require 'sourcepawn-mode nil t)
 
 ;;; Load theme
