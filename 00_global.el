@@ -101,6 +101,9 @@
 ;;; Evil fixes
 (add-hook 'with-editor-mode-hook 'evil-normal-state)
 
+;;; Default whitespace-style
+(setq whitespace-style '(face tabs empty trailing))
+
 ;;; Scroll one line at a time
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 

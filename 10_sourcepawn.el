@@ -7,9 +7,7 @@
 ;;; Code:
 
 (add-hook 'sourcepawn-mode-hook (lambda ()
-  (setq indent-line-function 'indent-relative)
-  (setq whitespace-style (delete 'lines-tail whitespace-style))
-  (whitespace-mode)))
+  (setq indent-line-function 'indent-relative)))
 
 (add-to-list 'auto-mode-alist '(".sp\\'" . sourcepawn-mode))
 (add-to-list 'auto-mode-alist '(".inc\\'" . sourcepawn-mode))
