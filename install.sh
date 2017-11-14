@@ -5,7 +5,7 @@ git clone https://github.com/bbatsov/prelude ~/.emacs.d
 cd ~/.emacs.d/personal
 git init
 
-ssh -T git@github.com </dev/null 2>&1 | grep "^Hi awkspace!" > /dev/null
+ssh -o ConnectTimeout=3 -T git@github.com </dev/null 2>&1 | grep "^Hi awkspace!" > /dev/null
 if [[ $? -eq 0 ]]
 then
     git remote add github ssh://git@github.com/awkspace/emacs-settings
