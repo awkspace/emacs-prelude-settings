@@ -98,6 +98,9 @@
 (global-set-key (kbd "C-x |") 'toggle-window-split)
 (global-set-key (kbd "C-x C-a") 'helm-ag-project-root)
 
+;;; Evil fixes
+(add-hook 'with-editor-mode-hook 'evil-normal-state)
+
 ;;; Scroll one line at a time
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 
