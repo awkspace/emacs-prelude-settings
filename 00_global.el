@@ -29,6 +29,7 @@
 (use-package darkokai-theme)
 (use-package robe)
 (use-package helm-ag)
+(use-package enh-ruby-mode)
 (require 'sourcepawn-mode nil t)
 
 ;;; Load theme
