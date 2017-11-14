@@ -100,4 +100,12 @@
 ;;; Scroll one line at a time
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 
+;;; Store temporary files in ~/.emacs.d.
+(setq backup-directory-alist
+      `((".*" . ,"~/.emacs-store/backup/")))
+(setq auto-save-file-name-transforms
+      `((".*" ,"~/.emacs-store/auto-save/" t)))
+(setq undo-tree-history-directory-alist
+      `((".*" . ,"~/.emacs-store/undo-tree/")))
+
 ;;; 00_global.el ends here
