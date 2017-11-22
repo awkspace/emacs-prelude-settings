@@ -167,7 +167,7 @@ function that should return non nil, when
 
 
 (defvar typopunct-opening-quote-syntax-list
-  '(?\  ?\- ?\( )
+  '(?\  ?\- ?\( ?\> )
   "Syntax classes for opening quotation marks.
 If the character before point belongs to one of these syntax classes,
 then the function `typopunct-insert-quotation-mark' inserts an opening
