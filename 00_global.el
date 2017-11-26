@@ -52,7 +52,7 @@
 
 ;;; Set default font on Linux only.
 (if (eq system-type 'gnu/linux)
-  (set-frame-font "Terminus 10"))
+  (add-to-list 'default-frame-alist '(font . "Terminus 10")))
 
 ;;; Disable guru mode as it works at odds with evil-mode.
 (setq prelude-guru nil)
