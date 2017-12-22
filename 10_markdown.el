@@ -6,6 +6,8 @@
 
 ;;; Code:
 
+(use-package markdown-mode)
+
 (defun markdown-mode-config ()
   (set-fill-column 80)
   (turn-on-auto-fill)
