@@ -117,6 +117,6 @@
       `((".*" . ,"~/.emacs-store/undo-tree/")))
 
 ;;; Create temporary directories if they don't exist.
-(make-directory '("~/.emacs-store/auto-save/" t))
+(make-directory "~/.emacs-store/auto-save/" t)
 
 ;;; 00_global.el ends here
