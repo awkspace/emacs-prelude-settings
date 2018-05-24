@@ -30,7 +30,7 @@
 (use-package robe)
 (use-package helm-ag)
 (use-package enh-ruby-mode)
-(use-package 'dockerfile-mode)
+(use-package dockerfile-mode)
 (require 'sourcepawn-mode nil t)
 
 ;;; Load theme
