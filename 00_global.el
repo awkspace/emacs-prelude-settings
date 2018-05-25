@@ -101,6 +101,9 @@
 (global-set-key (kbd "C-x C-a") 'helm-ag-project-root)
 (global-set-key (kbd "C-x n") 'ansi-term)
 
+;;; Undo Prelude's ace-window bind (commit d6786e3)
+(global-set-key [remap other-window] 'other-window)
+
 ;;; Evil fixes
 (add-hook 'with-editor-mode-hook 'evil-normal-state)
 
