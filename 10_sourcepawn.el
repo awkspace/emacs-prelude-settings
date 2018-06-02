@@ -6,6 +6,13 @@
 
 ;;; Code:
 
+(define-derived-mode sourcepawn-mode c-mode
+  "SourcePawn"
+  "SourcePawn editing mode."
+
+  (font-lock-add-keywords nil '(("\\<\\([A-Za-z]+\\|_\\):" . font-lock-builtin-face)))
+  )
+
 (add-hook 'sourcepawn-mode-hook (lambda ()
   (setq indent-line-function 'indent-relative)))
 

@@ -31,7 +31,6 @@
 (use-package helm-ag)
 (use-package enh-ruby-mode)
 (use-package dockerfile-mode)
-(require 'sourcepawn-mode nil t)
 
 ;;; Load theme
 (load-theme 'darkokai t)
