@@ -11,10 +11,9 @@
   "SourcePawn editing mode."
 
   (font-lock-add-keywords nil '(("\\<\\([A-Za-z]+\\|_\\):" . font-lock-builtin-face)))
-  )
-
-(add-hook 'sourcepawn-mode-hook (lambda ()
-  (setq indent-line-function 'indent-relative)))
+  (setq-local indent-line-function 'c-indent-line)
+  (setq-local tab-width 2)
+)
 
 (add-to-list 'auto-mode-alist '(".sp\\'" . sourcepawn-mode))
 (add-to-list 'auto-mode-alist '(".inc\\'" . sourcepawn-mode))
