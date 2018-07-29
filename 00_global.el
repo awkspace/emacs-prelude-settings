@@ -69,6 +69,10 @@
 ;;; Wrap text at 80 columns in all modes by default.
 (setq-default fill-column 80)
 
+;;; More sensible indent defaults.
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
 ;;; Toggle horizontal/vertical split with C-x |
 (defun toggle-window-split ()
   (interactive)
